@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch('https://black-forest-labs-flux-1-kontext-dev.hf.space/run/predict', {
+    const response = await fetch('https://black-forest-labs-flux-1-kontext-dev.hf.space', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(req.body)
